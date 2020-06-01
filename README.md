@@ -1,2 +1,2 @@
 # python_methods
-All the imp methods.
+All the important methods.
