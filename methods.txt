@@ -1,0 +1,78 @@
+people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson', 'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
+for person in people:
+    print((lambda x: x.split()[0] + ' ' + x.split()[-1])(person))
+print(['a', 'b', 'c'] + [1, 2, 3])
+print(type(lambda people:people))
+
+
+days= list(map(int, input().split()))
+a = [*map(int, input().split())]
+a, b, c = map(int, input().split())
+c.index(max(c))
+width = int(raw_input("Width of myarray: "))
+height = int(raw_input("Height of Array: "))
+myarray = [[0] * width for i in range(height)]
+myarray[0][0] = 3.5
+print (myarray[0][0])
+
+import re
+x = " i a m cvk 007 and i love 7"
+y = re.findall('[0-9]+', x)
+print(y)
+Output:-
+['007', '7']
+
+myarray = {(w,h): 0 for w in range(width) for h in range(height)}
+# or, in pre 2.7 versions of Python: myarray = dict(((w,h), 0) for w in range(width) for h in range(height))
+myarray[(0,0)] = 3.5
+Get key with max value:-
+max_key = max(a_dictionary, key=a_dictionary.get)
+print(max_key)
+
+
+print (myarray[(0,0)])
+
+values = dict()
+names = ['cvk', 'cvk', '007']
+for i in names:
+	values[i] = values.get(i, 0) + 1
+ 
+c= {"a":10,"b":1,"c":22}
+print(sorted([(v, k) for k,v in c.items()]))
+[(1, 'b'), (10, 'a'), (22, 'c')]
+
+values = dict()
+for j in range(int(input())):
+    k = input()
+    if k not in values:
+        values[k] = 1
+    else:
+        u = values[k]
+        u += 1
+        values[k] = u
+Shuffling strings:
+k = list(itertools.permutations(s, len(s)))
+
+m = re.findall('by\S(.+?).html', url)
+
+inclusive and exclusive
+Loss function
+Normalize in python
+reshape(X.shape[0], -1).T 
+
+import numpy as np
+import time
+from functools import reduce
+a = list(map(int, input().split()))
+b = time.time()
+li = []
+c = np.prod(a)
+for i in a:
+    li.append(int(c/i))
+print(li)
+print(float(time.time()) - float(b))
+result1 = reduce((lambda x, y: x * y), a)
+
+
+
+
